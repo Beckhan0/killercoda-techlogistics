@@ -1,10 +1,12 @@
 {
   "title": "Soluciones de Almacenamiento Cloud: Caso TechLogistics",
   "description": "Aprende a implementar almacenamiento compatible con S3 y automatizar backups.",
+
   "details": {
     "intro": {
       "text": "intro.md"
     },
+
     "steps": [
       {
         "title": "Levantar la Infraestructura Cloud",
@@ -19,15 +21,30 @@
         "text": "step3.md"
       }
     ],
+
     "finish": {
       "text": "finish.md"
     }
   },
+
   "backend": {
     "imageid": "ubuntu"
   },
+
   "environment": {
     "uilayout": "terminal"
   },
-  "foreground": "foreground.sh"
+
+  "assets": {
+    "client": [
+      {
+        "file": "foreground.sh",
+        "target": "/root/foreground.sh"
+      }
+    ]
+  },
+
+  "init": {
+    "script": "bash /root/foreground.sh"
+  }
 }
