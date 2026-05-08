@@ -25,5 +25,18 @@
   },
   "backend": {
     "imageid": "ubuntu"
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Terminal",
+        "port": 9000
+      }
+    ]
+  },
+  "scripts": {
+    "foreground": "foreground.sh"
   }
 }
